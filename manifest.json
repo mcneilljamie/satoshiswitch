@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Satoshi Switch",
+  "version": "1.0",
+  "description": "Convert prices from various currencies to Bitcoin or Satoshis.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Satoshi Switch"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

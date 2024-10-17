@@ -5,7 +5,6 @@
   "description": "Convert prices from various currencies to Bitcoin or Satoshis.",
   "permissions": [
     "activeTab",
-    "scripting",
     "storage",
     "alarms"
   ],
